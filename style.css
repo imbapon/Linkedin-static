@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* import fonts from google fonts api */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(18, 14, 29);
+    color: white;
+}
+.logo{
+    background-color: rgb(236, 234, 244);
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.6rem 4rem;
+    background-color: rgb(43, 46, 49);
+}
+
+nav .container .left,
+nav .container .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .container .left{
+    padding-left: 3rem;
+    display: flex;
+    gap: 0.6rem;
+}
+
+nav .container .left .input{
+    background:rgb(56 ,67, 79);
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-radius: 0.5rem;
+}
+
+nav .container .left .input input[type='search']{
+    width: 15rem;
+    border: none;
+    background: transparent;
+    border-color: rgb(56 ,67, 79);
+}
+
+nav .container .left .input input[type='search']::placeholder{
+    font-size: 0.9rem;
+    color: rgb(129, 155, 178);
+    font-weight: 100;
+    padding-left: 0.3rem;
+}
+nav .container .left .input i{
+    color: rgb(148, 204, 187);
+    font-size: 0.9rem;
+    padding-left: 0.6rem;
+}
+
+nav .container .right .home,
+nav .container .right .my-network,
+nav .container .right .jobs,
+nav .container .right .message,
+nav .container .right .notification,
+nav .container .right .me,
+nav .container .right .work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+nav .container .right .my-network,
+nav .container .right .jobs,
+nav .container .right .message,
+nav .container .right .notification,
+nav .container .right .me,
+nav .container .right .work{
+    color: rgb(147, 145, 145);
+}
+
+nav .container .right .my-network:hover,
+nav .container .right .jobs:hover,
+nav .container .right .message:hover,
+nav .container .right .notification:hover,
+nav .container .right .me:hover,
+nav .container .right .work:hover{
+    color: goldenrod;
+}
+
+nav .container .right .home i,
+nav .container .right .my-network i,
+nav .container .right .jobs i,
+nav .container .right .message i,
+nav .container .right .notification i{
+    font-size: 1.4rem;
+}
+
+nav .container .right .me .down,
+nav .container .right .work .down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+nav .container .right .me > i{
+    background-color: gray;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav .container .right .me .work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    width: 7rem;
+    text-align: center;
+    color: gold;
+    cursor: pointer;
+}
+.container a:hover{
+    text-decoration: underline;
+}
+
+/* ========================Navbar ends here===================== */
+
+/* ========Side bar ============= */
+.contain{
+    display: grid;
+    grid-template-columns: 20% 52% 28%;
+    gap: 1.4rem;
+    width: 85%;
+    margin: 1rem auto;
+}
+
+aside .sidebar{
+    background-color: rgb(43, 46, 49);
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.sidebar .sidebar-top{
+    width: 100%;
+    height: 9vh;
+    background-image:url(https://i.pinimg.com/originals/24/f6/24/24f624228a03a1a5a0f2e6563a75f2f5.jpg);
+    background-size: cover;
+    position: absolute;
+}
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+aside .sidebar .profile{
+    position: relative;
+    text-align: center;
+    top: 13%;
+    color: rgb(147, 145, 145);
+}
+
+/* Main section starts here */
+
+.contain main{
+    background-color: rgb(43, 46, 49);
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    border-radius: 0.8rem;
+    color: rgb(174, 160, 160);
+}
+main #close{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    color: rgb(174, 160, 160);
+}
+
+main .event{
+    margin: 1.5rem 0 0 1rem;
+    font-weight: 200;
+}
+
+/* right section starts here */
+.contain .right{
+    background-color: rgb(43, 46, 49);
+    width: 100%;
+    height: 70vh;
+    border-radius: 0.8rem;
+    color: rgb(174, 160, 160);
+}
+
+.right .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.right ul{
+    margin: 3rem;
+}
